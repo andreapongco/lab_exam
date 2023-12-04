@@ -28,7 +28,7 @@ for i in range(0, 61):
 
 write_in_file = []
 for i in range(0, 61):
-    table[i] = f'{",".join(table[i])},\n'
+    table[i] = ",".join(table[i])
     write_in_file.append(table[i])
 writeFile(write_in_file)
 
