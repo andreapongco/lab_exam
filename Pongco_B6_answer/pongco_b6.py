@@ -26,10 +26,11 @@ for i in range(0, 61):
     else:
         table[i].append(f"{table[i][1]}-{table[i][2]}-{table[i][3]}-{table[i][6]}\n")
 
+write_in_file = []
 for i in range(0, 61):
     table[i] = ",".join(table[i])
-
-writeFile(table)
+    write_in_file.append(table[i])
+writeFile(write_in_file)
 
         
             

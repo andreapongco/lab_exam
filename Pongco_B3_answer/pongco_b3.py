@@ -32,10 +32,10 @@ for i in filtered_table:
 
 unique_table = list(unique_table_dict.keys())
 
-unique_table[0] = "Scientific Name\n"
+unique_table[0] = "Scientific Name,\n"
 
 for i in range(1, len(unique_table)):
-    unique_table[i] = f"{unique_table[i]}\n"
+    unique_table[i] = f"{unique_table[i]},\n"
 
 writeFile(unique_table)
         
