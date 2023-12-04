@@ -22,7 +22,7 @@ table = readCSVFile()
 for i in range(0, 61):
     table[i] = table[i].split(",")
     if i == 0:
-        table[i].append("HRID,\n")
+        table[i][-1].append("HRID,\n")
     else:
         table[i].append(f"{table[i][1]}-{table[i][2]}-{table[i][3]}-{table[i][6]},\n")
 
